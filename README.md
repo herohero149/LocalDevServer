@@ -1,52 +1,62 @@
-````markdown
-# Lightweight Local Dev Server with Hot Reload ⚡🔥
+# Modern Local Dev Server with Hot Reload ⚡🔥
 
-> Serve your project folder instantly with auto-refresh on code changes — zero bloat, pure productivity.
-
----
-
-## Features 🚀
-
-- 📂 Serves files from your current directory  
-- 🔄 Hot reloads browser on `.html`, `.css`, `.js` changes  
-- ⚡ Super lightweight — minimal code, minimal hassle  
-- 🛠️ Zero setup, just run and code  
-- 🔒 No external dependencies except one tiny Python lib (`websockets`)  
+> A sleek, modern development server with live reload capability, beautiful UI, and zero configuration needed.
 
 ---
 
-## Quickstart ⚡
+## ✨ Features 
 
-1. Clone/download the `dev_server.py` script  
-2. Install required lib:
+- 📂 Modern, animated file browser interface
+- 🔄 Hot reloads browser on `.html`, `.css`, `.js` changes
+- 🎨 Beautiful, responsive design with dark mode support
+- 🚀 Super lightweight and fast
+- 🛠️ Zero configuration needed
+- 📱 Mobile-friendly interface
+- 🌓 Automatic dark mode support
+- 🔍 Sortable file listings
+- 💻 Built with modern Python
 
+---
+
+## 🚀 Quick Start
+
+1. Clone this repository or download the files:
    ```bash
-   pip install websockets
-````
+   git clone https://github.com/ArchieTUX/LocalDevServer.git
+   cd LocalDevServer
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Run the server:
-
    ```bash
    python dev_server.py
    ```
+   Or specify a custom port:
+   ```bash
+   python dev_server.py 8080
+   ```
 
-4. Open your browser at:
-
+4. Open your browser:
    ```
    http://localhost:8000
    ```
 
-5. Edit your `.html`, `.css`, or `.js` files — browser auto-refreshes instantly
+5. Start editing your files - the browser will automatically refresh on changes!
 
 ---
 
-## How it works 🧠
+## 🔧 How it Works
 
-* Runs an HTTP server serving files in the current directory
-* Injects a tiny WebSocket client script into HTML pages
-* Watches files for changes, notifies browser clients via WebSocket to reload
-
----
+- Runs a modern HTTP server with WebSocket support
+- Provides a beautiful, animated file browser interface
+- Automatically watches for file changes
+- Injects a tiny WebSocket client for hot reload
+- Handles all static files with proper MIME types
+- Supports both light and dark themes
 
 ## Why use this? 🤔
 
@@ -55,15 +65,28 @@
 * Hot reload keeps your flow unbroken
 * Perfect for developers who love minimalism and speed
 
+## 💡 Tips
+
+- The server automatically finds a free port if the default is in use
+- All HTML files get hot-reload capability automatically
+- Use dark mode for better visibility in low light
+- Click column headers to sort files
+- Works great with any static web project
+
+## 🛟 Troubleshooting
+
+If you see "Address already in use":
+- The server will automatically try the next available port
+- You can also specify a different port: `python dev_server.py 8080`
+
+If hot reload isn't working:
+- Make sure your browser supports WebSocket
+- Check if the WebSocket port is not blocked by firewall
+
+## 📝 License
+
+This project is licensed under the MIT [License](LICENSE) — do whatever, just don’t sue me.
+
 ---
 
-## License 📝
-
-This project is licensed under the **MIT License** — do whatever, just don’t sue me.
-
----
-
-Made with ⚡ by Adithya — powering your dev hustle, one reload at a time.
-
-```
-```
+Made with ⚡ by Adithya — Making development smoother, one reload at a time.
