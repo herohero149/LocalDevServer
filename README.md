@@ -22,7 +22,7 @@
 
 1. Clone this repository or download the files:
    ```bash
-   git clone https://github.com/ArchieTUX/LocalDevServer.git
+   git clone https://github.com/herohero149/LocalDevServer.git
    cd LocalDevServer
    ```
 
